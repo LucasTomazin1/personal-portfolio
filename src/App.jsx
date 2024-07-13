@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImage from './assets/images/web.jpg';
+import backgroundImage from './assets/images/background.jpg';
 import { Home } from './components/Home'
 import { NavBar } from './components/NavBar'
 import { GlobalStyle } from './GlobalStyle'
@@ -34,7 +34,14 @@ const BackgroundContainer = styled.div`
         rgba(19, 19, 31, 0.9) 0%,
         rgba(19, 19, 31, 0.5) 50%,
         rgba(19, 19, 31, 1) 100%
-    ), url(${backgroundImage});
+    ),
+    linear-gradient(
+        to top,
+        rgba(19, 19, 31, 0) 0%,
+        rgba(19, 19, 31, 0.8) 50%,
+        rgba(19, 19, 31, 0) 100%
+    ),
+    url(${backgroundImage});
     background-size: contain;
     background-repeat: repeat-y;
     background-position: center top;

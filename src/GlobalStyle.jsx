@@ -24,4 +24,17 @@ export const GlobalStyle = createGlobalStyle`
     li{
         list-style-type: none;
     }
+    h2{
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+    }
+    h3{
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        margin-bottom: 3rem;
+    }
 `

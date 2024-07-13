@@ -6,7 +6,7 @@ export const Ability = ({technology}) => {
     const icon = icons[technology]
     return(
         <AbilityCard>
-            <h2>{technology}</h2>
+            <h3>{technology}</h3>
             <Icon>
                 <FontAwesomeIcon icon={icon} />
             </Icon>

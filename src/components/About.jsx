@@ -15,18 +15,14 @@ export const AboutMe = () => {
 }
 
 const About = styled.div`
-    font-size: 2rem;
-    font-weight: 400;
-    color: #A9A9A9;
-    padding: 10rem;
-    margin: 0 20rem;
-    text-align: center;
-    line-height: 1.6;
+padding: 10rem;
+margin: 0 20rem;
+text-align: center;
 
-    h2{
-        font-size: 4rem;
-        font-weight: 600;
-        color: #00FFFF;
-        margin-bottom: 2rem;
+    p{
+        font-weight: 400;
+        font-size: 2rem;
+        color: #A9A9A9;
+        line-height: 1.6;
     }
 `

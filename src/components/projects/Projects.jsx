@@ -47,22 +47,7 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h2{
-        font-size: 4rem;
-        font-weight: 600;
-        color: #00FFFF;
-        margin-bottom: 2rem;
-    }
-        h3{
-        position: relative;
-        display: inline-block;
-        font-size: 2rem;
-        font-weight: 600;
-        color: #00FFFF;
-        padding-bottom: 0.5rem;
-        margin-bottom: 2rem;
-        }
+    
         h3::after {
             content: "";
             display: block;

@@ -4,6 +4,7 @@ import { Ability } from "./Ability"
 export const Abilities = () => {
     return(
         <Section id="abilities">
+            <h2>Habilidades</h2>
             <Ul>
                 <Ability technology="HTML 5" />
                 <Ability technology="CSS 3" />
@@ -19,6 +20,8 @@ export const Abilities = () => {
 
 const Section = styled.section`
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-bottom: 10rem;
 `
