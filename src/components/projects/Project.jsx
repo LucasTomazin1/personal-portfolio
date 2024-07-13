@@ -8,7 +8,7 @@ export const Project = ({title, src, link, technology}) => {
         <ProjecCard  href={link} target="_blank">
             <Img src={src} alt={title}/>
             <Content>
-                <h2>{title}</h2>
+                <h4>{title}</h4>
                 <ProjectIcons>
                     {techArray.map((tech) => {
                         const icon = icons[tech];
@@ -38,11 +38,15 @@ const ProjecCard = styled.a`
 
 const Content = styled.div`
     position: absolute;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    h4{
+        font-size: 2rem;
+        font-weight: 600;
+    }
 `
 
 const Img = styled.img`

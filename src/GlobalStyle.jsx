@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #13131f;
         color: #00FFFF;
         font-family: Montserrat, sans-serif;
+        scroll-behavior: smooth;
     }
     a{
         text-decoration: none;

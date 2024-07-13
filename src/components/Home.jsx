@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import foto from "../assets/foto.png"
+import foto from "../assets/images/foto.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope as faEnvelopeRegular } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';

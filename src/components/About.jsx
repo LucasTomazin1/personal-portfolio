@@ -27,6 +27,6 @@ const About = styled.div`
         font-size: 4rem;
         font-weight: 600;
         color: #00FFFF;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 `

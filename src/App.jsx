@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImage from './assets/web.jpg';
+import backgroundImage from './assets/images/web.jpg';
 import { Home } from './components/Home'
 import { NavBar } from './components/NavBar'
 import { GlobalStyle } from './GlobalStyle'
