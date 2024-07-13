@@ -5,12 +5,12 @@ export const NavBar = () => {
         <Header>
             <Nav>
                 <Ul>
-                    <li><A href="#">Sobre mim</A></li>
-                    <li><A href="#">Habilidades</A></li>
-                    <li><A href="#">Projetos</A></li>
+                    <li><A href="#about">Sobre mim</A></li>
+                    <li><A href="#abilities">Habilidades</A></li>
+                    <li><A href="#projects">Projetos</A></li>
                     <li><A href="#" target="_blanc">Curriculo</A></li>
                 </Ul>
-                <Span>&lt;LucasTomaziniDev /&gt;</Span>
+                <Span>&lt;DevLucasTomazini /&gt;</Span>
             </Nav>
         </Header>
     )
@@ -19,8 +19,9 @@ export const NavBar = () => {
 const Header = styled.header`
     width: 100vw;    
     background-color: #13131b;
-    border-bottom: solid 2px #8257E6;
+    border-bottom: solid 3px #8257E6;
     position: fixed;
+    z-index: 1;
 `
 
 const Nav = styled.nav`

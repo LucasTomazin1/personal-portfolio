@@ -34,8 +34,14 @@ const AbilityCard = styled.li`
     justify-content: center;
     background-color: #212121;
     border-top-left-radius: 2.5rem;
-    border-bottom: solid 2px #8257E6;
-    transition: 0.2s;
+    border-bottom: solid 3px #8257E6;
+    transition: all 0.3s ease-out;
+    
+    &:hover {
+        transform: scale(1.08);
+        color: #8257E6;
+        font-weight: 500;
+    }
 `
 
 const Icon = styled.div`

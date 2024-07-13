@@ -3,15 +3,15 @@ import { Ability } from "./Ability"
 
 export const Abilities = () => {
     return(
-        <Section>
+        <Section id="abilities">
             <Ul>
-                <Ability technology="HTML 5"      />
-                <Ability technology="CSS 3"      />
-                <Ability technology="JavaScript"  />
-                <Ability technology="React"       />
-                <Ability technology="Css-in-JS"   />
-                <Ability technology="Git"      />
-                <Ability technology="Git Hub"     />
+                <Ability technology="HTML 5" />
+                <Ability technology="CSS 3" />
+                <Ability technology="JavaScript" />
+                <Ability technology="React" />
+                <Ability technology="Css-in-JS" />
+                <Ability technology="Git" />
+                <Ability technology="Git Hub" />
             </Ul>
         </Section>
     )

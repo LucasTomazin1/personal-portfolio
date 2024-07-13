@@ -5,7 +5,8 @@ import { NavBar } from './components/NavBar'
 import { GlobalStyle } from './GlobalStyle'
 import { AboutMe } from './components/About';
 import { Abilities } from './components/abilities/Abilities';
-import { Project } from './components/projects/Project';
+import { Projects } from './components/projects/Projects';
+
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
         <Home />
         <AboutMe />
         <Abilities />
-        <Project />
+        <Projects />
       </BackgroundContainer>
     </>
   )
