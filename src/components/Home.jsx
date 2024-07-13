@@ -1,8 +1,7 @@
 import styled from "styled-components"
 import foto from "../assets/images/foto.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope as faEnvelopeRegular } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { SocialLinks } from "./social-links/SocialLinks";
+
 export const Home = () => {
     return(
         <Container>
@@ -10,12 +9,7 @@ export const Home = () => {
                 <span>Olá, eu sou o</span>
                 <h1>Lucas Tomazini</h1>
                 <p>Desenvolvedor Front-End</p>
-                <Links>
-                    <li><a href="https://github.com/LucasTomazin1" target="_blanc"><FontAwesomeIcon icon={faGithub} /></a></li>
-                    <li><a href="https://www.linkedin.com/in/lucas-tomazini-82042a301/" target="_blanc"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://wa.me/5554996107420" target="_blanc"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
-                    <li><a href="mailto:lucasgtomazini@gmail.com" target="_blanc"><FontAwesomeIcon icon={faEnvelopeRegular} /></a></li>
-                </Links>
+                <SocialLinks />
             </Content>
             <ImgContainer>
                 <Img src={foto} alt="Lucas Tomazini" />
@@ -47,16 +41,6 @@ const Content = styled.div`
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
     }
-`
-const Links = styled.ul`
-    display: flex;
-    font-size: 3.5rem;
-    gap: 2rem;
-    transition: all 0.3s ease-out;
-    
-    li:hover {
-        transform: scale(1.08);
-        color: #8257E6;
 `
 
 const ImgContainer = styled.div`

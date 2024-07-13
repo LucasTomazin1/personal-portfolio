@@ -6,7 +6,7 @@ export const Ability = ({technology}) => {
     const icon = icons[technology]
     return(
         <AbilityCard>
-            <h3>{technology}</h3>
+            <h5>{technology}</h5>
             <Icon>
                 <FontAwesomeIcon icon={icon} />
             </Icon>
@@ -26,6 +26,10 @@ const AbilityCard = styled.li`
     border-bottom: solid 3px #8257E6;
     transition: all 0.3s ease-out;
     
+    h5{
+        font-size: 2rem;
+        font-weight: 600;
+    }
     &:hover {
         transform: scale(1.08);
         color: #8257E6;

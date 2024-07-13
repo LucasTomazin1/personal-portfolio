@@ -6,6 +6,7 @@ import { GlobalStyle } from './GlobalStyle'
 import { AboutMe } from './components/About';
 import { Abilities } from './components/abilities/Abilities';
 import { Projects } from './components/projects/Projects';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Abilities />
         <Projects />
       </BackgroundContainer>
+      <Footer />
     </>
   )
 }
