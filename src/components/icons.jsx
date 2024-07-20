@@ -1,12 +1,19 @@
-import { faHtml5, faCss3, faJs, faReact, faGitAlt, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPalette } from "@fortawesome/free-solid-svg-icons"
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiGit,
+  SiGithub,
+  SiStyledcomponents,
+} from "react-icons/si";
 
 export const icons = {
-    "HTML 5": faHtml5,
-    "CSS 3": faCss3,
-    "JavaScript": faJs,
-    "React": faReact,
-    "Css-in-JS": faPalette,
-    "Git": faGitAlt,
-    "Git Hub": faGithub,
+  "HTML 5": SiHtml5,
+  "CSS 3": SiCss3,
+  JavaScript: SiJavascript,
+  React: SiReact,
+  "Css-in-JS": SiStyledcomponents,
+  Git: SiGit,
+  Github: SiGithub,
 };

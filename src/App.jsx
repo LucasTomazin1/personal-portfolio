@@ -29,8 +29,8 @@ function App() {
 export default App
 
 const BackgroundContainer = styled.div`
-    width: 100vw;
-
+    width: 100%;
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(19, 19, 31, 0.9) 0%,
