@@ -1325,6 +1325,7 @@ max-width: 70vw;
   transition: all 0.3s ease-out;
   border-bottom-right-radius: 3rem;
   visibility: hidden;
+  z-index: -1;
 
   &:hover {
     visibility: visible;
