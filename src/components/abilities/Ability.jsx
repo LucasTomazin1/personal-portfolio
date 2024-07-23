@@ -69,8 +69,8 @@ const AbilityCard = styled.li`
   }
 
   @media (max-width: 320px) {
-    width: 4.5rem;
-    height: 5rem;
+    width: 5rem;
+    height: 6rem;
     border-top-left-radius: 1rem;
     h5 {
       font-size: 0.8rem;

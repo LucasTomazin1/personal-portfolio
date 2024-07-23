@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,22 +18,23 @@ export const NavBar = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </Hamburger>
         <Ul isOpen={isOpen}>
-          <li>
-            <A href="#about">Sobre mim</A>
+          <li onClick={toggleMenu}>
+            <A href="#about" >Sobre mim</A>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <A href="#abilities">Habilidades</A>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <A href="#projects">Projetos</A>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <A href="#" target="_blanc">
               Curriculo
             </A>
           </li>
         </Ul>
         <Span>&lt;DevLucasTomazini /&gt;</Span>
+        <FontAwesomeIcon icon={faSun} />
       </Nav>
     </Header>
   );
@@ -51,10 +54,6 @@ const Nav = styled.nav`
   align-items: center;
   padding: 2rem;
   font-size: 2rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
 
 const A = styled.a`
@@ -71,7 +70,7 @@ const Span = styled.span`
   }
 
   @media (max-width: 320px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 `;
@@ -88,7 +87,7 @@ const Ul = styled.ul`
     gap: 1rem;
     background-color: #13131b;
     position: absolute;
-    top: 80px; // Ajustar conforme necessário
+    top: 80px;
     right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
     width: 100%;
     height: calc(100vh - 80px);
@@ -96,6 +95,11 @@ const Ul = styled.ul`
     align-items: center;
     transition: right 0.3s ease-in-out;
   }
+
+    @media (max-width: 425px){
+    top: 60px;
+    height: calc(100vh - 60px);
+    }
 `;
 
 const Hamburger = styled.div`

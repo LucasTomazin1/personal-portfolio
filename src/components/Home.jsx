@@ -37,11 +37,9 @@ const Container = styled.section`
 
   @media (max-width: 425px) {
     gap: 3rem;
-    padding-top: 11rem;
+    padding-top: 10rem;
   }
 
-  @media (max-width: 320px) {
-  }
 `;
 
 const Content = styled.div`

@@ -99,4 +99,8 @@ const RepositoryLink = styled.a`
   &:hover {
     visibility: visible;
   }
+  @media (max-width: 768px) {
+    position: static;
+    visibility: visible;
+  }
 `;

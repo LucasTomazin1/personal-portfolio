@@ -31,10 +31,12 @@ const Section = styled.section`
 
   @media (max-width: 768px) {
     padding: 6rem;
+    padding-top: 8.5rem;
   }
 
   @media (max-width: 425px) {
     padding: 4rem;
+    padding-top: 7rem;
   }
 
   @media (max-width: 320px) {
@@ -49,15 +51,15 @@ const Ul = styled.ul`
   flex-wrap: wrap;
   max-width: 40vw;
 
-    media (max-width: 1024px) {
-max-width: 45vw;
+  media (max-width: 1024px) {
+    max-width: 45vw;
   }
 
   @media (max-width: 768px) {
-max-width: 55vw;
+    max-width: 55vw;
   }
 
   @media (max-width: 425px) {
-max-width: 70vw;
+    max-width: 70vw;
   }
 `;

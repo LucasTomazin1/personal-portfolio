@@ -78,14 +78,17 @@ const Container = styled.section`
 
   @media (max-width: 768px) {
     padding: 6rem;
+    padding-top: 8rem;
   }
 
   @media (max-width: 425px) {
     padding: 4rem;
-  }
-
-  @media (max-width: 320px) {
-    padding: 3rem;
+    padding-top: 8rem;
+    }
+    
+    @media (max-width: 320px) {
+        padding: 3rem;
+        padding-top: 7rem;
   }
 `;
 

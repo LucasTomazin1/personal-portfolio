@@ -27,45 +27,48 @@ const About = styled.div`
   text-align: center;
 
   @media (max-width: 1024px) {
-      padding: 8rem;
-      margin: 0 15rem;
+    padding: 8rem;
+    margin: 0 15rem;
   }
 
   @media (max-width: 768px) {
-      padding: 6rem;
-      margin: 0 10rem;
+    padding: 6rem;
+    margin: 0 10rem;
+    padding-top: 8.5rem;
   }
 
   @media (max-width: 425px) {
-      padding: 4rem;
-      margin: 0 5rem;
+    padding: 4rem;
+    margin: 0 5rem;
+    padding-top: 8rem;
   }
 
   @media (max-width: 320px) {
-      padding: 3rem;
-      margin: 0;
+    padding: 3rem;
+    margin: 0;
+    padding-top: 8rem;
   }
 
   p {
-      font-weight: 400;
-      font-size: 2rem;
-      color: #a9a9a9;
-      line-height: 1.6;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #a9a9a9;
+    line-height: 1.6;
 
-      @media (max-width: 1024px) {
-          font-size: 1.8rem;
-      }
+    @media (max-width: 1024px) {
+      font-size: 1.8rem;
+    }
 
-      @media (max-width: 768px) {
-          font-size: 1.6rem;
-      }
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
 
-      @media (max-width: 425px) {
-          font-size: 1.4rem;
-      }
+    @media (max-width: 425px) {
+      font-size: 1.4rem;
+    }
 
-      @media (max-width: 320px) {
-          font-size: 1.2rem;
-      }
+    @media (max-width: 320px) {
+      font-size: 1.2rem;
+    }
   }
 `;
