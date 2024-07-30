@@ -6,6 +6,7 @@ import {
   SiGit,
   SiGithub,
   SiStyledcomponents,
+  SiTypescript,
 } from "react-icons/si";
 
 export const icons = {
@@ -16,4 +17,5 @@ export const icons = {
   "Css-in-JS": SiStyledcomponents,
   Git: SiGit,
   Github: SiGithub,
+  TypeScript: SiTypescript,
 };

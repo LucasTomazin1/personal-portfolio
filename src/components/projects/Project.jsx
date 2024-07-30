@@ -64,6 +64,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  text-align: center;
 
   h4 {
     font-size: 2rem;

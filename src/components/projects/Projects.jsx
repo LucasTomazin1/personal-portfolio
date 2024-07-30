@@ -4,6 +4,7 @@ import GithubImage from "../../assets/images/api-github.png";
 import GtaImage from "../../assets/images/clone-gta.png";
 import FormImage from "../../assets/images/validacao-formulario.png";
 import PokedexImage from "../../assets/images/pokedex.png";
+import ECommerceImage from "../../assets/images/e-commerce.png";
 const BASE_URL = "https://lucastomazin1.github.io/";
 const BASE_REP = "https://github.com/LucasTomazin1/";
 
@@ -15,11 +16,18 @@ export const Projects = () => {
         <h3>Destaques</h3>
         <MainProjects>
           <Project
-            title="GitHub API"
+            title="Pokédex"
             src={PokedexImage}
             link={`${BASE_URL}pokedex`}
             Replink={`${BASE_REP}pokedex`}
-            technology="React, Css-in-JS"
+            technology="React, JavaScript, Css-in-JS"
+          />
+          <Project
+            title="E-commerce (em desenvolvimento)"
+            src={ECommerceImage}
+            link={`${BASE_URL}e-commerce`}
+            Replink={`${BASE_REP}e-commerce`}
+            technology="React, TypeScript, Css-in-JS"
           />
         </MainProjects>
         <h3>Outros Projetos</h3>

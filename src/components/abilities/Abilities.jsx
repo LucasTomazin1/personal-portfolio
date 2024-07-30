@@ -9,6 +9,7 @@ export const Abilities = () => {
         <Ability technology="HTML 5" />
         <Ability technology="CSS 3" />
         <Ability technology="JavaScript" />
+        <Ability technology="TypeScript" />
         <Ability technology="React" />
         <Ability technology="Css-in-JS" />
         <Ability technology="Git" />

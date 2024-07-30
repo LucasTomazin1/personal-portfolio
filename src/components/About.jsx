@@ -7,7 +7,7 @@ export const AboutMe = () => {
       <p>
         Sou um desenvolvedor web apaixonado por tecnologia e novos aprendizados.
         Atualmente, estou me dedicando ao estudo intensivo, adquirindo
-        habilidades em HTML, CSS, JavaScript e React. Tenho uma estrutura
+        habilidades em HTML, CSS, JavaScript, TypeScript e React. Tenho uma estrutura
         organizada para meus projetos e estou aprimorando tanto minhas
         competências práticas quanto comportamentais e habilidades
         interpessoais.
