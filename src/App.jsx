@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import backgroundImage from './assets/images/background.jpg';
-import { Home } from './components/Home'
-import { NavBar } from './components/NavBar'
+import { Home } from './components/home'
 import { GlobalStyle } from './GlobalStyle'
-import { AboutMe } from './components/About';
-import { Abilities } from './components/abilities/Abilities';
-import { Projects } from './components/projects/Projects';
-import { Footer } from './components/Footer';
+import { AboutMe } from './components/about';
+import { Abilities } from './components/abilities';
+import { Projects } from './components/projects';
+import { Footer } from './components/footer';
+import { NavBar } from './components/NavBar';
 
 
 function App() {

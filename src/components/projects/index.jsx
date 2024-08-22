@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Project } from "./Project";
+import { Project } from "../project";
 import GithubImage from "../../assets/images/api-github.png";
 import GtaImage from "../../assets/images/clone-gta.png";
 import FormImage from "../../assets/images/validacao-formulario.png";

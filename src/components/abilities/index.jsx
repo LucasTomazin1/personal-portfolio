@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Ability } from "./Ability";
+import { Ability } from "../ability";
 
 export const Abilities = () => {
   return (
@@ -14,6 +14,8 @@ export const Abilities = () => {
         <Ability technology="Css-in-JS" />
         <Ability technology="Git" />
         <Ability technology="Github" />
+        <Ability technology="Next.js" />
+        <Ability technology="TailWind" />
       </Ul>
     </Section>
   );

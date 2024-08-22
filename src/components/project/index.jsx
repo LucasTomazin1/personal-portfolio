@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { icons } from "../icons";
+import { icons } from "../icons/icons";
 
 export const Project = ({ title, src, link, Replink, technology }) => {
   const techArray = technology.split(", ");

@@ -1,4 +1,4 @@
-import { icons } from "../icons";
+import { icons } from "../icons/icons";
 import styled from "styled-components";
 
 export const Ability = ({ technology }) => {

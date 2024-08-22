@@ -7,6 +7,8 @@ import {
   SiGithub,
   SiStyledcomponents,
   SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export const icons = {
@@ -18,4 +20,6 @@ export const icons = {
   Git: SiGit,
   Github: SiGithub,
   TypeScript: SiTypescript,
+  TailWind: SiTailwindcss,
+  "Next.js": SiNextdotjs,
 };

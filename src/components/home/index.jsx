@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import foto from "../assets/images/foto.png";
-import { SocialLinks } from "./social-links/SocialLinks";
+import foto from "../../assets/images/foto.png";
+import { SocialLinks } from "../SocialLinks";
 
 export const Home = () => {
   return (
