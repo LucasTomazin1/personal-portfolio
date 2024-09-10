@@ -1,12 +1,13 @@
-import styled from "styled-components";
-import { Project } from "../project";
-import GithubImage from "../../assets/images/api-github.png";
-import GtaImage from "../../assets/images/clone-gta.png";
-import FormImage from "../../assets/images/validacao-formulario.png";
-import PokedexImage from "../../assets/images/pokedex.png";
-import ECommerceImage from "../../assets/images/e-commerce.png";
-const BASE_URL = "https://lucastomazin1.github.io/";
-const BASE_REP = "https://github.com/LucasTomazin1/";
+import styled from 'styled-components'
+import { Project } from '../project'
+import GithubImage from '../../assets/images/api-github.png'
+import GtaImage from '../../assets/images/clone-gta.png'
+import FormImage from '../../assets/images/validacao-formulario.png'
+import PokedexImage from '../../assets/images/pokedex.png'
+import ECommerceImage from '../../assets/images/e-commerce.png'
+import TodoListImage from '../../assets/images/todo-list.png'
+const BASE_URL = 'https://lucastomazin1.github.io/'
+const BASE_REP = 'https://github.com/LucasTomazin1/'
 
 export const Projects = () => {
   return (
@@ -21,6 +22,13 @@ export const Projects = () => {
             link={`${BASE_URL}pokedex`}
             Replink={`${BASE_REP}pokedex`}
             technology="React, JavaScript, Css-in-JS"
+          />
+          <Project
+            title="Todo List and Notes (em desenvolvimento)"
+            src={TodoListImage}
+            link={`${BASE_URL}todo-list`}
+            Replink={`${BASE_REP}todo-list`}
+            technology="React, TypeScript, TailWind"
           />
           <Project
             title="E-commerce (em desenvolvimento)"
@@ -56,14 +64,14 @@ export const Projects = () => {
         </OtherProjects>
       </AllProjects>
     </Container>
-  );
-};
+  )
+}
 
 const AllProjects = styled.div`
   h3 {
     align-self: flex-start;
   }
-`;
+`
 
 const Container = styled.section`
   display: flex;
@@ -72,7 +80,7 @@ const Container = styled.section`
   padding: 10rem;
 
   h3::after {
-    content: "";
+    content: '';
     display: block;
     width: 75%;
     border-bottom: solid 2px #8257e6;
@@ -92,18 +100,18 @@ const Container = styled.section`
   @media (max-width: 425px) {
     padding: 4rem;
     padding-top: 8rem;
-    }
-    
-    @media (max-width: 320px) {
-        padding: 3rem;
-        padding-top: 7rem;
   }
-`;
+
+  @media (max-width: 320px) {
+    padding: 3rem;
+    padding-top: 7rem;
+  }
+`
 
 const MainProjects = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   gap: 2rem;
   flex-wrap: wrap;
 
@@ -123,12 +131,12 @@ const MainProjects = styled.div`
   @media (max-width: 320px) {
     padding-bottom: 3rem;
   }
-`;
+`
 
 const OtherProjects = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   gap: 2rem;
   flex-wrap: wrap;
 
@@ -148,4 +156,4 @@ const OtherProjects = styled.div`
   @media (max-width: 320px) {
     padding-bottom: 3rem;
   }
-`;
+`

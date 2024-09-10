@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { icons } from "../icons/icons";
+import styled from 'styled-components'
+import { icons } from '../icons/icons'
 
 export const Project = ({ title, src, link, Replink, technology }) => {
-  const techArray = technology.split(", ");
+  const techArray = technology.split(', ')
   return (
     <Container>
       <ProjecCard href={link} target="_blank">
@@ -11,8 +11,8 @@ export const Project = ({ title, src, link, Replink, technology }) => {
           <h4>{title}</h4>
           <ProjectIcons className={technology}>
             {techArray.map((tech) => {
-              const IconComponent = icons[tech];
-              return IconComponent ? <IconComponent key={tech} /> : null;
+              const IconComponent = icons[tech]
+              return IconComponent ? <IconComponent key={tech} /> : null
             })}
           </ProjectIcons>
           <span> Ver no GitHub Pages</span>
@@ -22,14 +22,15 @@ export const Project = ({ title, src, link, Replink, technology }) => {
         <span>Acessar repositório</span>
       </RepositoryLink>
     </Container>
-  );
-};
+  )
+}
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease-out;
+  margin-bottom: 5rem;
 
   span {
     font-size: 1.7rem;
@@ -38,7 +39,10 @@ const Container = styled.div`
   &:hover {
     transform: scale(1.08);
   }
-`;
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+`
 
 const ProjecCard = styled.a`
   display: flex;
@@ -52,7 +56,7 @@ const ProjecCard = styled.a`
   &:hover + a {
     visibility: visible;
   }
-`;
+`
 
 const Content = styled.div`
   position: absolute;
@@ -70,19 +74,19 @@ const Content = styled.div`
     font-size: 2rem;
     font-weight: 600;
   }
-`;
+`
 
 const Img = styled.img`
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: cover;
-`;
+`
 
 const ProjectIcons = styled.div`
   display: flex;
   font-size: 2.5rem;
   gap: 1rem;
-`;
+`
 
 const RepositoryLink = styled.a`
   width: 100%;
@@ -104,4 +108,4 @@ const RepositoryLink = styled.a`
     position: static;
     visibility: visible;
   }
-`;
+`

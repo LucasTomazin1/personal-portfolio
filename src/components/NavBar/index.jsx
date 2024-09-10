@@ -1,15 +1,13 @@
-import styled from "styled-components";
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import styled from 'styled-components'
+import { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 export const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <Header>
@@ -19,7 +17,7 @@ export const NavBar = () => {
         </Hamburger>
         <Ul isOpen={isOpen}>
           <li onClick={toggleMenu}>
-            <A href="#about" >Sobre mim</A>
+            <A href="#about">Sobre mim</A>
           </li>
           <li onClick={toggleMenu}>
             <A href="#abilities">Habilidades</A>
@@ -34,11 +32,10 @@ export const NavBar = () => {
           </li>
         </Ul>
         <Span>&lt;DevLucasTomazini /&gt;</Span>
-        <FontAwesomeIcon icon={faSun} />
       </Nav>
     </Header>
-  );
-};
+  )
+}
 
 const Header = styled.header`
   width: 100vw;
@@ -46,7 +43,7 @@ const Header = styled.header`
   border-bottom: solid 3px #8257e6;
   position: fixed;
   z-index: 1;
-`;
+`
 
 const Nav = styled.nav`
   display: flex;
@@ -54,11 +51,11 @@ const Nav = styled.nav`
   align-items: center;
   padding: 2rem;
   font-size: 2rem;
-`;
+`
 
 const A = styled.a`
   padding: 1rem;
-`;
+`
 
 const Span = styled.span`
   font-size: 3rem;
@@ -73,7 +70,7 @@ const Span = styled.span`
     font-size: 1.5rem;
     font-weight: 600;
   }
-`;
+`
 
 const Ul = styled.ul`
   display: flex;
@@ -88,7 +85,7 @@ const Ul = styled.ul`
     background-color: #13131b;
     position: absolute;
     top: 80px;
-    right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+    right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     width: 100%;
     height: calc(100vh - 80px);
     justify-content: center;
@@ -96,11 +93,11 @@ const Ul = styled.ul`
     transition: right 0.3s ease-in-out;
   }
 
-    @media (max-width: 425px){
+  @media (max-width: 425px) {
     top: 60px;
     height: calc(100vh - 60px);
-    }
-`;
+  }
+`
 
 const Hamburger = styled.div`
   display: none;
@@ -111,4 +108,4 @@ const Hamburger = styled.div`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`
