@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const AboutMe = () => {
   return (
     <About id="about">
       <h2>Sobre mim</h2>
       <p>
-        Sou um desenvolvedor web apaixonado por tecnologia e novos aprendizados.
+        {/* Sou um desenvolvedor web apaixonado por tecnologia e novos aprendizados. */}
         Atualmente, estou me dedicando ao estudo intensivo, adquirindo
-        habilidades em HTML, CSS, JavaScript, TypeScript e React. Tenho uma estrutura
-        organizada para meus projetos e estou aprimorando tanto minhas
+        habilidades em HTML, CSS, JavaScript, TypeScript e React. Tenho uma
+        estrutura organizada para meus projetos e estou aprimorando tanto minhas
         competências práticas quanto comportamentais e habilidades
         interpessoais.
       </p>
@@ -18,8 +18,8 @@ export const AboutMe = () => {
         Estou pronto para enfrentar novos desafios.
       </p>
     </About>
-  );
-};
+  )
+}
 
 const About = styled.div`
   padding: 10rem;
@@ -71,4 +71,4 @@ const About = styled.div`
       font-size: 1.2rem;
     }
   }
-`;
+`

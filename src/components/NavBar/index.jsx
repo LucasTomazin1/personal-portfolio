@@ -26,7 +26,11 @@ export const NavBar = () => {
             <A href="#projects">Projetos</A>
           </li>
           <li onClick={toggleMenu}>
-            <A href="#" target="_blanc">
+            <A
+              href="../assets/currículo-lucas-tomazini.pdf"
+              download
+              target="_blanc"
+            >
               Curriculo
             </A>
           </li>
