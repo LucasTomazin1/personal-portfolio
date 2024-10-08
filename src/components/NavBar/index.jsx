@@ -31,7 +31,7 @@ export const NavBar = () => {
               download
               target="_blanc"
             >
-              Curriculo
+              Currículo
             </A>
           </li>
         </Ul>
