@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import curriculo from '../../assets/curriculo-lucas-tomazini.pdf'
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,11 +27,7 @@ export const NavBar = () => {
             <A href="#projects">Projetos</A>
           </li>
           <li onClick={toggleMenu}>
-            <A
-              href="../assets/curriculo-lucas-tomazini.pdf"
-              download
-              target="_blanc"
-            >
+            <A href={curriculo} download target="_blanc">
               Currículo
             </A>
           </li>
